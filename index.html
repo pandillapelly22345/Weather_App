@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app">
         <h1>Weather</h1>
         <input type="text" id="city" placeholder="Enter City Name">
         <button onclick="fetchData()">Go</button>
-        <img src="" alt="error" style="display: none">
+        <img src="" alt="error" id="image" style="display: none">
         <div id="city_info">
-
+            <h3 id="country"></h3>
+            <h3 id="citys"></h3>
         </div>
         <div id="condition">
-            
+            <h2 id="wcon"></h2>
+            <h3 id="cel"></h3>
+            <h3 id="fer"></h3>
         </div>
 
 
     </div>
 </body>
+<script src="script.js"></script>
 </html>
