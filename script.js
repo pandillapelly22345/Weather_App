@@ -36,11 +36,11 @@ async function fetchData(){
         const fer = data.current.temp_f;
         const f = document.getElementById("fer");
 
-        coun.textContent = country;
-        cit.textContent = city;
-        weath.textContent = weather;
-        cel.textContent = celcius;
-        f.textContent = fer;
+        coun.innerHTML = `<i class="fas fa-globe"></i> ${country}`;
+        cit.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${city}`;
+        weath.innerHTML = `${weather}`;
+        cel.innerHTML = `<i class="fas fa-thermometer-half"></i> ${celcius} &deg;C`;
+        f.innerHTML =  `<i class="fas fa-thermometer-full"></i> ${fer} &deg;F`;
 
     }
     catch(error){
